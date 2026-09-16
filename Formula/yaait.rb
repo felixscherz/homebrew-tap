@@ -1,33 +1,35 @@
 class Yaait < Formula
   desc "Multi-instance AI usage tracker"
   homepage "https://github.com/felixscherz/yaait"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.0/yaait-aarch64-apple-darwin.tar.xz"
-      sha256 "ba4ea66b4061f4364f0ca6e5da77165f8a49026fee4cf8a0498834dc2dfdceeb"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.1/yaait-aarch64-apple-darwin.tar.xz"
+      sha256 "397f99c64311cb850336d7625a072d029640ea1efea21338cf4365c697885bc6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.0/yaait-x86_64-apple-darwin.tar.xz"
-      sha256 "6465e1e2c54d7e4a4a944f97f0f8309419fdf94be088b9aedac7b4c85c71e6ee"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.1/yaait-x86_64-apple-darwin.tar.xz"
+      sha256 "3f7de6cfea8b30d4fb63ee4d39de89ca2374518605ef3347cbe9971206678f8f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.0/yaait-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ea1b2f22af164d7babce035d32fc8036e6270da57686f0481a367c035d3edc02"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.1/yaait-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "710b0fe194ed6ebc8a0e4b497f852ff907482906babfff3ddb6d85c26d7189b3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.0/yaait-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8e65f9330b6e72253ad130982d640456e0ed398c762ed22c28d2464f994f5fa2"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.1/yaait-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b9ed2ec05afd4ed9912e85022f8325a5356be6ce6b3fe9a650cd2d92156c549e"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
+    "aarch64-pc-windows-gnu":    {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
