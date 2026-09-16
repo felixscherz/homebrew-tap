@@ -1,25 +1,25 @@
 class Yaait < Formula
   desc "Multi-instance AI usage tracker"
   homepage "https://github.com/felixscherz/yaait"
-  version "0.2.4"
+  version "0.2.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.4/yaait-aarch64-apple-darwin.tar.xz"
-      sha256 "81f5c16c6077297cf73f4abf3ce7f6b36c3a4512955b44ca1f0fc3623b610a2f"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.5/yaait-aarch64-apple-darwin.tar.xz"
+      sha256 "f73d85236fba19d7e573b6b8b3e8f81fd11f4b4dc280e7955c8d64c5ed2cf13f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.4/yaait-x86_64-apple-darwin.tar.xz"
-      sha256 "46cf1c421fc2ca25e6928c1cc808b580030ec7d5f7da3bf28ef2a5a4e31b1aad"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.5/yaait-x86_64-apple-darwin.tar.xz"
+      sha256 "d6cfdde15ef1f4860099fd6900d3ec4a6f6402997a1a1f90bda6d71a46bc0079"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.4/yaait-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b2df7c3f5f7d70dc2e3afdc96c43d0284598301d28a2136b884563e1c16389de"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.5/yaait-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "934edc994aa0d33fc7d4207dd8256c4e741d86deeb3c6408c03704af6012bb08"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/felixscherz/yaait/releases/download/v0.2.4/yaait-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0153a9064ce0e98fbdd7d9dfa811fb842dda924b4e64b0c72b2960d6e8a1594f"
+      url "https://github.com/felixscherz/yaait/releases/download/v0.2.5/yaait-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "423152c0a1d8a164b602f6cd92a324dce31aaf5dc6354696302c68e9979a0de4"
     end
   end
   license "MIT"
